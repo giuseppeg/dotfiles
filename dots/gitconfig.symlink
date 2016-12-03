@@ -1,0 +1,11 @@
+[alias]
+	st = status
+	ci = commit
+[user]
+	name = Giuseppe Gurgone
+	email = giuseppeg@users.noreply.github.com
+[core]
+	editor = "subl -n -w"
+	excludesfile = ~/.gitignore_global
+[credential]
+	helper = osxkeychain
