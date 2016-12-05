@@ -12,3 +12,6 @@ set -e
 
 # node
 ./node.sh
+
+# subl
+./subl.sh
