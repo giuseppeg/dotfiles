@@ -1,0 +1,17 @@
+{
+	"binary_file_patterns":
+	[
+		"**/build/**",
+		"**/dist/**",
+		"**/node_modules/**"
+	],
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 15,
+	"ignored_packages": [],
+	"insert_final_newline": true,
+	"open_files_in_new_window": false,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
