@@ -1,0 +1,3 @@
+# run local npm binaries
+
+function npml { (PATH=$(npm bin):$PATH; eval $@;) }
