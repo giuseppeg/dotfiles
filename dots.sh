@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 
-DOTFILES_ROOT="$HOME/.dotfiles"
+DOTFILES_ROOT="`pwd`/dots"
 
 set -e
-cp -R dots "$DOTFILES_ROOT"
-dot_files=$(find "$DOTFILES_ROOT" -maxdepth 2 -name \*.symlink -print)
+dot_files=$(find $DOTFILES_ROOT -maxdepth 2 -name \*.symlink -print)
 
 info () {
     printf "\r[ \033[00;34m..\033[0m ] $1\n"
 }
 
 link_files () {
-    ln -s "$1" "$2"
+    ln -sf "$1" "$2"
     info "linked $1 to $2"
 }
 
@@ -33,6 +32,7 @@ install_dotfiles () {
 			mkdir -p "$DOTFILES_ROOT/backup"
 			mv "$dest" "$DOTFILES_ROOT/backup/$file_base"
 		fi
+
 		link_files "$source" "$dest"
 	done
 
@@ -40,4 +40,4 @@ install_dotfiles () {
 }
 
 install_dotfiles
-link_files "$DOTFILES_ROOT/.ssh" "$HOME/.ssh" 
+link_files "$DOTFILES_ROOT/.ssh" "$HOME/.ssh"

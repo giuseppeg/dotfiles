@@ -81,11 +81,11 @@ brew tap homebrew/dupes
 brew_install_or_upgrade grep --with-default-names
 
 # Ruby
-brew_install_or_upgrade rbenv
-brew_install_or_upgrade ruby-build
+brew_install_or_upgrade rvm
 
 # Install other useful binaries.
 brew_install_or_upgrade htop
 brew_install_or_upgrade python
+brew_install_or_upgrade tor
 
 brew cleanup

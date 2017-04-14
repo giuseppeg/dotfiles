@@ -20,14 +20,16 @@ brew tap caskroom/versions
 # Browsers
 install_cask firefox
 install_cask google-chrome
-install_cask torbrowser
 
 # Cloud
-install_cask dropbox
 install_cask megasync
 
 # Comms
 install_cask skype
+install_cask slack
+install_cask moeditor
+install_cask teamviewer
+install_cask 1password
 
 # Media
 install_cask spotify
@@ -38,6 +40,7 @@ install_cask sublime-text
 install_cask gitify
 install_cask iterm2
 install_cask virtualbox
+install_cask docker
 
 # Mac OS Enhancements
 install_cask alfred

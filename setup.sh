@@ -15,3 +15,8 @@ set -e
 
 # subl
 ./subl.sh
+
+# macos settings
+./macos.sh
+
+mkdir -p ~/code
