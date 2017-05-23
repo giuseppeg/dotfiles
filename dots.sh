@@ -3,7 +3,7 @@
 DOTFILES_ROOT="`pwd`/dots"
 
 set -e
-dot_files=$(find $DOTFILES_ROOT -maxdepth 2 -name \*.symlink -print)
+dot_files=$(find $DOTFILES_ROOT -maxdepth 1 -name \*.symlink -print)
 
 info () {
     printf "\r[ \033[00;34m..\033[0m ] $1\n"
@@ -40,4 +40,6 @@ install_dotfiles () {
 }
 
 install_dotfiles
+
+mkdir -p "$HOME/.ssh"
 link_files "$DOTFILES_ROOT/.ssh" "$HOME/.ssh"

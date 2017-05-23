@@ -9,3 +9,5 @@
 	excludesfile = ~/.gitignore_global
 [credential]
 	helper = osxkeychain
+[help]
+  autocorrect = 1
