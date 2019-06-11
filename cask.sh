@@ -20,6 +20,7 @@ brew tap caskroom/versions
 # Browsers
 install_cask firefox
 install_cask google-chrome
+install_cask brave-browser
 
 # Cloud
 install_cask megasync
@@ -44,7 +45,6 @@ install_cask docker
 
 # Mac OS Enhancements
 install_cask alfred
-install_cask gpgtools
 install_cask the-unarchiver
 install_cask hyperswitch
 

@@ -5,13 +5,19 @@
 		"**/dist/**",
 		"**/node_modules/**"
 	],
-	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Legacy/Twilight.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_size": 15,
-	"ignored_packages": [],
+	"font_size": 21,
+	"ignored_packages":
+	[
+		"TypeScript",
+		"Vintage"
+	],
 	"insert_final_newline": true,
 	"open_files_in_new_window": false,
+	"show_legacy_color_schemes": true,
 	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

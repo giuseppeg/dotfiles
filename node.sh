@@ -3,7 +3,7 @@ log() {
   printf "\n\e[94m$fmt\n" "$@"
 }
 
-node_install_version=6.9.1
+node_install_version=10.16.0
 
 log "Installing nvm ..."
 if [ ! -s "$NVM_DIR/nvm.sh" ] ; then
@@ -33,7 +33,9 @@ install_global_npm_package() {
 log "Installing npm global packages ..."
 
 install_global_npm_package diff-so-fancy
-install_global_npm_package gulp
-install_global_npm_package http-server
+install_global_npm_package serve
+install_global_npm_package ava
+install_global_npm_package yarn
+install_global_npm_package brew-install
 install_global_npm_package nodemon
 install_global_npm_package replace
