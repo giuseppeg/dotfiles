@@ -22,7 +22,7 @@ export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 
 # path...
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:~/.dotfiles/scripts:$PATH
 
 # npm
 export NPM_PACKAGES="${HOME}/.npm-packages"

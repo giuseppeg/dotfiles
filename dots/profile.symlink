@@ -12,6 +12,10 @@ shopt -s histappend
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 # * Recursive globbing, e.g. `echo **/*.txt`
@@ -29,11 +33,14 @@ for file in ~/.{exports,aliases,functions,fun,extra}; do
 done
 unset file
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-
 export PATH="$PATH:./node_modules/.bin"
 
 source "$HOME/.nvm/nvm.sh"
+
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/work_rsa
+
+# export PATH="$HOME/.cargo/bin:$PATH"
+
+# asdf
+# export PATH="$HOME/.asdf/shims:$PATH"

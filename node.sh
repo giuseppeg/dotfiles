@@ -7,7 +7,7 @@ node_install_version=10.16.0
 
 log "Installing nvm ..."
 if [ ! -s "$NVM_DIR/nvm.sh" ] ; then
-  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | zsh
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
   source "$HOME/.nvm/nvm.sh"
   log "Installing node $node_install_version ..."
   nvm install "$node_install_version"
