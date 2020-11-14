@@ -1,9 +1,6 @@
 [alias]
 	st = status
 	ci = commit
-[user]
-	name = Giuseppe Gurgone
-	email = giuseppeg@users.noreply.github.com
 [core]
 	editor = "subl -n -w"
 	excludesfile = ~/.gitignore_global
@@ -16,3 +13,9 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[includeIf "gitdir:~/code/"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/work/"]
+	path = ~/.gitconfig-professional
+[user]
+	email = giuseppeg@users.noreply.github.com
