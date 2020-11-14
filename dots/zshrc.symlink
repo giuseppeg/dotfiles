@@ -1,0 +1,9 @@
+if [ -r ~/.prompt ]; then
+    source ~/.prompt
+fi
+
+# Load ~/.exports, ~/.aliases, ~/.functions, ~/.fun, and ~/.extra
+for file in ~/.{exports,aliases,functions,fun,extra}; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
