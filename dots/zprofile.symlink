@@ -29,4 +29,11 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 eval "$(ssh-agent -s)"
 #ssh-add -K ~/.ssh/work_rsa
 ssh-add -K ~/.ssh/ggurgone_gh_rsa
-ssh-add -K ~/.ssh/gitlab_work_rsa
+# ssh-add -K ~/.ssh/gitlab_work_rsa
+
+
+# Setting PATH for Python 3.8
+alias python=/usr/local/bin/python3.8
+alias pip=/usr/local/bin/pip3.8
+
+export PATH

@@ -1,6 +1,6 @@
 [alias]
 	st = status
-	ci = commit
+	ci = !git add -p && git commit
 [core]
 	editor = "subl -n -w"
 	excludesfile = ~/.gitignore_global
