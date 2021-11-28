@@ -35,11 +35,12 @@ install_dotfiles () {
 
 		link_files "$source" "$dest"
 	done
-
-	restart_shell
 }
+
 
 install_dotfiles
 
 mkdir -p "$HOME/.ssh"
-link_files "$DOTFILES_ROOT/.ssh" "$HOME/.ssh"
+link_files "$DOTFILES_ROOT/.ssh/config.symlink" "$HOME/.ssh/config"
+
+restart_shell

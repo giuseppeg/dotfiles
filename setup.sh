@@ -1,17 +1,19 @@
 #!/bin/bash
 set -e
 
+mkdir -p ~/.bin
+
 # dotfiles
 ./dots.sh
 
 # homebrew
-./brew.sh
+#./brew.sh
 
 # cask
-./cask.sh
+#./cask.sh
 
 # node
-./node.sh
+#./node.sh
 
 # subl
 ./subl.sh

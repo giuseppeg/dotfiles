@@ -47,4 +47,4 @@ prompt_git() {
 
 # Set up the prompt (with git branch name)
 setopt prompt_subst
-PROMPT='%~ $(prompt_git '⎇')%(!.#.\$) '
+PROMPT='%~ $(prompt_git() '⎇')%(!.#.\$) '
