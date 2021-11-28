@@ -1,9 +1,8 @@
 prompt_git() {
   # check if the current directory is in a git repository
-
-  if [ $(git rev-parse --is-inside-work-tree &>/dev/null; print $?) == 0 ]; then
+  if [ $(git rev-parse --is-inside-work-tree &>/dev/null; print $?) = 0 ]; then
     # check if the current directory is in .git before running git checks
-    if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == "false" ]; then
+    if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" = "false" ]; then
 
       # ensure index is up to date
       git update-index --really-refresh  -q &>/dev/null
@@ -47,4 +46,4 @@ prompt_git() {
 
 # Set up the prompt (with git branch name)
 setopt prompt_subst
-PROMPT='%~ $(prompt_git() '⎇')%(!.#.\$) '
+PROMPT='%~ $(prompt_git '⎇')%(!.#.\$) '
