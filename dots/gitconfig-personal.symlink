@@ -1,3 +1,5 @@
 [user]
   name = Giuseppe Gurgone
   email = giuseppeg@users.noreply.github.com
+[core]
+  sshCommand = "ssh -i ~/.ssh/github-personal.pub"

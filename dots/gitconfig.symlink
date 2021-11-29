@@ -13,9 +13,9 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[user]
+	email = giuseppeg@users.noreply.github.com
 [includeIf "gitdir:~/code/"]
 	path = ~/.gitconfig-personal
 [includeIf "gitdir:~/work/"]
 	path = ~/.gitconfig-professional
-[user]
-	email = giuseppeg@users.noreply.github.com
