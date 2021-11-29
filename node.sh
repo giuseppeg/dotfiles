@@ -3,11 +3,11 @@ log() {
   printf "\n\e[94m$fmt\n" "$@"
 }
 
-node_install_version=10.16.0
+node_install_version=16.13.0
 
 log "Installing nvm ..."
 if [ ! -s "$NVM_DIR/nvm.sh" ] ; then
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | zsh
   source "$HOME/.nvm/nvm.sh"
   log "Installing node $node_install_version ..."
   nvm install "$node_install_version"
@@ -18,7 +18,7 @@ else
 fi
 
 log "Configuring npm to work without sudo..."
-wget -O- https://raw.githubusercontent.com/glenpike/npm-g_nosudo/master/npm-g-nosudo.sh | sh
+curl -o- https://raw.githubusercontent.com/glenpike/npm-g_nosudo/master/npm-g-nosudo.sh | zsh
 
 npm_packages="$(npm list -g --depth=0)"
 install_global_npm_package() {
@@ -32,10 +32,8 @@ install_global_npm_package() {
 
 log "Installing npm global packages ..."
 
+install_global_npm_package yarn
 install_global_npm_package diff-so-fancy
 install_global_npm_package serve
-install_global_npm_package ava
-install_global_npm_package yarn
-install_global_npm_package brew-install
-install_global_npm_package nodemon
+install_global_npm_package vercel
 install_global_npm_package replace
