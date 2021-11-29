@@ -2,4 +2,4 @@
   name = Giuseppe Gurgone
   email = ggurgone@users.noreply.github.com
 [core]
-  sshCommand = "ssh -i ~/.ssh/github-work.pub"
+  sshCommand = "ssh -i ~/.ssh/github-work"
