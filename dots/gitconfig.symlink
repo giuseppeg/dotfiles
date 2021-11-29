@@ -15,7 +15,7 @@
 	required = true
 [user]
 	email = giuseppeg@users.noreply.github.com
-[includeIf "gitdir:~/code/"]
+[includeIf "gitdir:~/"]
 	path = ~/.gitconfig-personal
 [includeIf "gitdir:~/work/"]
 	path = ~/.gitconfig-work

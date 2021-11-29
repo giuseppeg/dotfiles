@@ -8,8 +8,3 @@
 # shopt -s cdspell
 
 source "$HOME/.nvm/nvm.sh"
-
-#eval "$(ssh-agent -s)"
-#ssh-add -K ~/.ssh/work_rsa
-#ssh-add -K ~/.ssh/ggurgone_gh_rsa
-# ssh-add -K ~/.ssh/gitlab_work_rsa
