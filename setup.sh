@@ -13,7 +13,7 @@ mkdir -p ~/.bin
 #./cask.sh
 
 # node
-#./node.sh
+./node.sh
 
 # subl
 ./subl.sh
